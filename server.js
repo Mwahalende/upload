@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/mediaApp", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://user1:malafiki@leodb.5mf7q.mongodb.net/?retryWrites=true&w=majority&appName=leodb", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.error(err));
 
